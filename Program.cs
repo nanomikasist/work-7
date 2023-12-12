@@ -50,24 +50,24 @@
 //        SymbolClass obj1 = new SymbolClass('a');
 //        SymbolClass obj2 = new SymbolClass('b');
 
-//        Console.WriteLine(obj1); // Выводит символ 'a'
-//        Console.WriteLine(obj2); // Выводит символ 'b'
+//        Console.WriteLine(obj1); 
+//        Console.WriteLine(obj2); 
 
-//        obj1++; // Инкрементируем obj1
-//        obj2--; // Декрементируем obj2
+//        obj1++; 
+//        obj2--; 
 
-//        Console.WriteLine(obj1); // Выводит символ 'b'
-//        Console.WriteLine(obj2); // Выводит символ 'a'
+//        Console.WriteLine(obj1); 
+//        Console.WriteLine(obj2); 
 
-//        SymbolClass obj3 = obj1 + 1; // Суммируем obj1 и число 1
-//        SymbolClass obj4 = 2 + obj2; // Суммируем число 2 и obj2
+//        SymbolClass obj3 = obj1 + 1; 
+//        SymbolClass obj4 = 2 + obj2; 
 
-//        Console.WriteLine(obj3); // Выводит символ 'c'
-//        Console.WriteLine(obj4); // Выводит символ 'c'
+//        Console.WriteLine(obj3); 
+//        Console.WriteLine(obj4); 
 
-//        int diff = obj3 - obj4; // Вычисляем разность obj3 и obj4
+//        int diff = obj3 - obj4; 
 
-//        Console.WriteLine(diff); // Выводит значение -1
+//        Console.WriteLine(diff); 
 //    }
 //}
 //2----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -188,11 +188,11 @@
 //        MyClass obj1 = new MyClass(2, 3);
 //        MyClass obj2 = new MyClass(4, 5);
 
-//        Console.WriteLine(obj1); // Выводит "Field1: 2, Field2: 3"
-//        Console.WriteLine(obj2); // Выводит "Field1: 4, Field2: 5"
+//        Console.WriteLine(obj1); 
+//        Console.WriteLine(obj2); 
 
-//        Console.WriteLine(obj1 > obj2); // Выводит "False"
-//        Console.WriteLine(obj1 < obj2); // Выводит "True"
+//        Console.WriteLine(obj1 > obj2); 
+//        Console.WriteLine(obj1 < obj2); 
 //    }
 //}
 //4----------------------------------------------------------------------------------------------------------------------------------------------------
@@ -270,21 +270,18 @@
 //        set { charValue = value; }
 //    }
 
-//    // Перегрузка оператора true
 //    public static bool operator true(MyClass obj)
 //    {
 //        int diff = Math.Abs(obj.IntegerValue - (int)obj.CharValue);
 //        return diff <= 10;
 //    }
 
-//    // Перегрузка оператора false
 //    public static bool operator false(MyClass obj)
 //    {
 //        int diff = Math.Abs(obj.IntegerValue - (int)obj.CharValue);
 //        return diff > 10;
 //    }
 
-//    // Оператор явного преобразования класса MyClass к типу string
 //    public static explicit operator string(MyClass obj)
 //    {
 //        return obj.CharValue.ToString();
